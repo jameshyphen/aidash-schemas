@@ -1,4 +1,4 @@
-schema: "schema/**/*.graphql"
+schema: "schemas/**/*.graphql"
 
 generates:
   # ------------- Pure TypeScript types ------------------

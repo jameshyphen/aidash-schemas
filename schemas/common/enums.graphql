@@ -1,0 +1,14 @@
+"""
+User roles in the system
+"""
+enum Role {
+  """
+  Administrator with full access
+  """
+  ADMIN
+
+  """
+  Regular user with limited access
+  """
+  USER
+}

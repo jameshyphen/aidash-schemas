@@ -1,13 +1,31 @@
+"""
+Root query type
+"""
 type Query {
-  _empty: String
+  """
+  Empty field to satisfy GraphQL schema requirements
+  """
+  empty: String
 }
 
+"""
+Root mutation type
+"""
 type Mutation {
-  _empty: String
+  """
+  Empty field to satisfy GraphQL schema requirements
+  """
+  empty: String
 }
 
+"""
+Root subscription type
+"""
 type Subscription {
-  _empty: String
+  """
+  Empty field to satisfy GraphQL schema requirements
+  """
+  empty: String
 }
 
 schema {

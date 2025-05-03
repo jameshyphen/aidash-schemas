@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Build output
+dist
+build
+
+# Docker
+docker
+
+# IDE
+.idea
+.vscode
+
+# Misc
+.git
+.github
+.gitignore
+README.md 

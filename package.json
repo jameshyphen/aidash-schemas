@@ -8,17 +8,21 @@
     },
     "scripts": {
         "build": "graphql-codegen --config codegen.yml",
-        "lint": "graphql-schema-linter \"schema/**/*.graphql\"",
-        "prepublishOnly": "npm run build"
+        "lint": "graphql-schema-linter \"schemas/**/*.graphql\"",
+        "prepublishOnly": "npm run build",
+        "format": "prettier --write \"schemas/**/*.graphql\"",
+        "format:check": "prettier --check \"schemas/**/*.graphql\""
     },
     "dependencies": {
         "graphql": "^16.8.1"
     },
     "devDependencies": {
-        "@graphql-codegen/cli": "^3.2.2",
-        "@graphql-codegen/typescript": "^3.2.2",
-        "@graphql-codegen/typescript-operations": "^3.2.2",
-        "@graphql-codegen/typescript-react-apollo": "^3.2.2",
-        "graphql-schema-linter": "^0.3.0"
+        "@graphql-codegen/cli": "^5.0.5",
+        "@graphql-codegen/typescript": "^4.1.6",
+        "@graphql-codegen/typescript-operations": "^4.1.6",
+        "@graphql-codegen/typescript-react-apollo": "^4.1.6",
+        "graphql-schema-linter": "^0.3.0",
+        "prettier": "^3.2.5",
+        "@prettier/plugin-graphql": "^0.0.1"
     }
 }

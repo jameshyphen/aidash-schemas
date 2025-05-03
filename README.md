@@ -15,8 +15,9 @@ This repository contains GraphQL schemas used by both frontend and backend servi
 
 These schemas are used to:
 1. Generate TypeScript types for the frontend
-2. Validate GraphQL operations on the backend
-3. Ensure type safety across the entire stack
+2. Generate Java classes for the backend
+3. Validate GraphQL operations on the backend
+4. Ensure type safety across the entire stack
 
 ## Development
 

@@ -1,0 +1,25 @@
+schema: "schema/**/*.graphql"
+
+generates:
+  # ------------- Pure TypeScript types ------------------
+  ./dist/ts/types.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+
+  # --------------React-Apollo hooks & HOCs --------------
+  ./dist/ts/hooks.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      reactApolloVersion: 3
+
+hooks:
+  afterAllFileWrite:
+    - prettier --write

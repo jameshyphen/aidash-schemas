@@ -19,7 +19,3 @@ generates:
       withHOC: false
       withComponent: false
       reactApolloVersion: 3
-
-hooks:
-  afterAllFileWrite:
-    - prettier --write
